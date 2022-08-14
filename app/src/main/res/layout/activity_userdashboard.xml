@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userdashboard"
+    android:background="#dcf2f5"
+    android:id="@+id/userdashboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <RelativeLayout
+               android:id="@+id/topbar"
+               android:layout_width="match_parent"
+               android:layout_height="51dp"
+               android:background="#3cb4c3">
+
+
+               <ImageButton
+                   android:id="@+id/backarrow"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:backgroundTint="#3cb4c3"
+                   android:src="@drawable/backarrow" />
+
+               <TextView
+                   android:id="@+id/resturantname"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="12dp"
+                   android:layout_toRightOf="@+id/backarrow"
+                   android:text="Dashboard"
+                   android:textColor="#dcf2f5"
+                   android:textSize="20dp"
+                   android:textStyle="bold" />
+
+
+           </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User's Name"
+                android:textSize="20dp"
+                android:layout_below="@+id/topbar"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+           <TextView
+               android:id="@+id/number"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="8888888888"
+               android:textSize="18dp"
+               android:layout_below="@+id/username"
+               android:layout_marginTop="0dp"
+               android:layout_marginLeft="20dp"/>
+
+           <TextView
+               android:id="@+id/email"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="xxxxx@gmail.com"
+               android:textSize="18dp"
+               android:layout_below="@+id/number"
+               android:layout_marginTop="0dp"
+               android:layout_marginLeft="20dp"/>
+
+           <TextView
+               android:id="@+id/edit"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="EDIT"
+               android:textSize="18dp"
+               android:layout_below="@+id/topbar"
+               android:layout_toRightOf="@+id/username"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="210dp"
+               android:textColor="#3cb4c3"/>
+
+           <View
+               android:id="@+id/line1"
+               android:layout_width="370dp"
+               android:layout_height="1dp"
+               android:layout_below="@+id/email"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="10dp"
+               android:background="#94818181" />
+
+           <TextView
+               android:id="@+id/manage"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/line1"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="15dp"
+               android:text="Manage Address"
+               android:textColor="@color/black"
+               android:textSize="20dp" />
+
+           <TextView
+               android:id="@+id/managedetail"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Address, Favourites, Offers, Settings"
+               android:textSize="18dp"
+               android:layout_below="@+id/manage"
+               android:layout_marginTop="0dp"
+               android:layout_marginLeft="20dp" />
+
+           <View
+               android:id="@+id/line2"
+               android:layout_width="370dp"
+               android:layout_height="1dp"
+               android:layout_below="@+id/managedetail"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="10dp"
+               android:background="#94818181" />
+
+           <ImageView
+               android:id="@+id/home"
+               android:layout_width="wrap_content"
+               android:layout_below="@+id/line2"
+               android:layout_height="wrap_content"
+               android:src="@drawable/homeicon"
+               android:layout_marginTop="10dp"
+               app:tint="#3cb4c3"
+               android:layout_marginLeft="25dp"/>
+
+           <TextView
+               android:id="@+id/homeadress"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Manage Address"
+               android:textSize="18dp"
+               android:layout_toRightOf="@+id/home"
+               android:layout_below="@+id/line2"
+               android:layout_marginTop="13dp"
+               android:layout_marginLeft="20dp"
+               android:textColor="@color/black"/>
+
+           <ImageView
+               android:id="@+id/fav"
+               android:layout_width="wrap_content"
+               android:layout_below="@+id/home"
+               android:layout_height="wrap_content"
+               android:src="@drawable/staricon"
+               android:layout_marginTop="15dp"
+               app:tint="#3cb4c3"
+               android:layout_marginLeft="25dp"/>
+
+           <TextView
+               android:id="@+id/favourite"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Favourites"
+               android:textSize="18dp"
+               android:layout_toRightOf="@+id/fav"
+               android:layout_below="@+id/homeadress"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="20dp"
+               android:textColor="@color/black"/>
+
+           <ImageView
+               android:id="@+id/offer"
+               android:layout_width="wrap_content"
+               android:layout_below="@+id/fav"
+               android:layout_height="wrap_content"
+               android:src="@drawable/offer_icon"
+               android:layout_marginTop="15dp"
+               app:tint="#3cb4c3"
+               android:layout_marginLeft="25dp"/>
+
+           <TextView
+               android:id="@+id/offertext"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Offers"
+               android:textSize="18dp"
+               android:layout_toRightOf="@+id/offer"
+               android:layout_below="@+id/favourite"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="20dp"
+               android:textColor="@color/black"/>
+
+           <ImageView
+               android:id="@+id/setting"
+               android:layout_width="wrap_content"
+               android:layout_below="@+id/offer"
+               android:layout_height="wrap_content"
+               android:src="@drawable/setting_icon"
+               android:layout_marginTop="15dp"
+               app:tint="#3cb4c3"
+               android:layout_marginLeft="25dp"/>
+
+           <TextView
+               android:id="@+id/sttingtext"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Settings"
+               android:textSize="18dp"
+               android:layout_toRightOf="@+id/setting"
+               android:layout_below="@+id/offertext"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="20dp"
+               android:textColor="@color/black"/>
+
+           <View
+               android:id="@+id/line3"
+               android:layout_width="370dp"
+               android:layout_height="1dp"
+               android:layout_below="@+id/setting"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="10dp"
+               android:background="#94818181" />
+
+           <TextView
+               android:id="@+id/Pay"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/line3"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="15dp"
+               android:text="Payment and Refunds"
+               android:textColor="@color/black"
+               android:textSize="20dp" />
+
+           <TextView
+               android:id="@+id/paydetail"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Manage your Refunds, Payment Modes"
+               android:textSize="18dp"
+               android:layout_below="@+id/Pay"
+               android:layout_marginTop="0dp"
+               android:layout_marginLeft="20dp" />
+
+           <View
+               android:id="@+id/line4"
+               android:layout_width="370dp"
+               android:layout_height="1dp"
+               android:layout_below="@+id/paydetail"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="10dp"
+               android:background="#94818181" />
+
+           <ImageView
+               android:id="@+id/refund"
+               android:layout_width="wrap_content"
+               android:layout_below="@+id/line4"
+               android:layout_height="wrap_content"
+               android:src="@drawable/refund_icon"
+               android:layout_marginTop="10dp"
+               app:tint="#3cb4c3"
+               android:layout_marginLeft="25dp"/>
+
+           <TextView
+               android:id="@+id/refundtext"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Refund Status"
+               android:textSize="18dp"
+               android:layout_toRightOf="@+id/refund"
+               android:layout_below="@+id/line4"
+               android:layout_marginTop="13dp"
+               android:layout_marginLeft="20dp"
+               android:textColor="@color/black"/>
+
+           <ImageView
+               android:id="@+id/payoptions"
+               android:layout_width="wrap_content"
+               android:layout_below="@+id/refund"
+               android:layout_height="wrap_content"
+               android:src="@drawable/paymenticon"
+               android:layout_marginTop="15dp"
+               app:tint="#3cb4c3"
+               android:layout_marginLeft="25dp"/>
+
+           <TextView
+               android:id="@+id/paytext"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Payment Methods"
+               android:textSize="18dp"
+               android:layout_toRightOf="@+id/payoptions"
+               android:layout_below="@+id/refundtext"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="20dp"
+               android:textColor="@color/black"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/paytext"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:background="#6F514E4E"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:id="@+id/faq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAQ's and Links"
+                android:layout_centerVertical="true"
+                android:textSize="18dp"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/side_arrow"
+                android:layout_toRightOf="@+id/faq"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="180dp"/>
+
+
+        </RelativeLayout>
+
+
+       </RelativeLayout>
+
+    </ScrollView>
+
+
+    <View
+        android:id="@+id/blank_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottomnav"
+        android:background="#615D5D"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:background="#3cb4c3">
+
+        <ImageButton
+            android:id="@+id/homeicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/homeicon"
+            android:backgroundTint="#3cb4c3"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageButton
+            android:id="@+id/staricon"
+            android:layout_toRightOf="@+id/homeicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/staricon"
+            android:backgroundTint="#3cb4c3"
+            android:layout_marginLeft="50dp"/>
+
+        <ImageButton
+            android:id="@+id/carticon"
+            android:layout_toRightOf="@+id/staricon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/carticon"
+            android:backgroundTint="#3cb4c3"
+            android:layout_marginLeft="50dp"/>
+
+        <ImageButton
+            android:id="@+id/accounticon"
+            android:layout_toRightOf="@+id/carticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/accounticon"
+            android:backgroundTint="#3cb4c3"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

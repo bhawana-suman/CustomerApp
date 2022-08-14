@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage"
+    android:background="#dcf2f5"
+    android:id="@+id/homepage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Hello, User Name"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tagline"
+                android:layout_below="@+id/hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Order - Eat - Repeat!!"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/bellicon"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#3cb4c3"
+                android:src="@drawable/notificationicon"
+                app:cornerRadius="10dp" />
+
+            <EditText
+                android:id="@+id/searchbar"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tagline"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/foodsearchbar"
+                android:drawableLeft="@drawable/search_icon"
+                android:hint="  What do you wanna eat?"
+                android:paddingStart="10dp" />
+
+            <HorizontalScrollView
+                android:id="@+id/horscroll"
+                android:layout_below="@+id/searchbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="350dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="10dp"
+                        android:backgroundTint="#dcf2f5">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/food1"/>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="350dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="10dp"
+                        android:backgroundTint="#dcf2f5">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/food2"/>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="350dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="10dp"
+                        android:backgroundTint="#dcf2f5">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/food3"/>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+
+
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_below="@+id/horscroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Category"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="240dp"
+                android:layout_height="2dp"
+                android:layout_below="@+id/horscroll"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="37dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/category"
+                android:background="#3cb4c3" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/northindian"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/category"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#dcf2f5"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/northindianfood" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="140dp"
+                    android:gravity="center"
+                    android:text="North Indian"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/southindian"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/category"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/northindian"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#dcf2f5"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/southindianfood" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="140dp"
+                    android:gravity="center"
+                    android:text="South Indian"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/chinese"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/northindian"
+                android:backgroundTint="#dcf2f5"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/chiniesfood" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="140dp"
+                    android:gravity="center"
+                    android:text="Chinese"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/drinks"
+                android:layout_below="@+id/southindian"
+                android:layout_toRightOf="@+id/chinese"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#dcf2f5"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/drinksfood" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="140dp"
+                    android:gravity="center"
+                    android:text="Drinks"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/resturant"
+                android:layout_below="@+id/chinese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Top Resturants"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="175dp"
+                android:layout_height="2dp"
+                android:layout_below="@+id/chinese"
+                android:layout_marginTop="37dp"
+                android:layout_toRightOf="@+id/resturant"
+                android:background="#3cb4c3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp" />
+
+            <HorizontalScrollView
+                android:id="@+id/horscroll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resturant">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.card.MaterialCardView
+                    android:layout_width="320dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="20dp"
+                    android:backgroundTint="#dcf2f5">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/resturant1" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="320dp"
+                        android:layout_height="170dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        app:cardCornerRadius="20dp"
+                        android:backgroundTint="#dcf2f5">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/resturant1" />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="320dp"
+                        android:layout_height="170dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        app:cardCornerRadius="20dp"
+                        android:backgroundTint="#dcf2f5">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/resturant1" />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/blank_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottomnav"
+        android:background="#615D5D"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:background="#3cb4c3"
+        >
+
+        <ImageButton
+            android:id="@+id/homeicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/homeicon"
+            android:backgroundTint="#3cb4c3"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageButton
+            android:id="@+id/staricon"
+            android:layout_toRightOf="@+id/homeicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/staricon"
+            android:backgroundTint="#3cb4c3"
+            android:layout_marginLeft="50dp"/>
+
+        <ImageButton
+            android:id="@+id/carticon"
+            android:layout_toRightOf="@+id/staricon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/carticon"
+            android:backgroundTint="#3cb4c3"
+            android:layout_marginLeft="50dp"/>
+
+        <ImageButton
+            android:id="@+id/accounticon"
+            android:layout_toRightOf="@+id/carticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/accounticon"
+            android:backgroundTint="#3cb4c3"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

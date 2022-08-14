@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".resturantpage"
+    android:background="#dcf2f5"
+    android:id="@+id/resturantpage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/topbar"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:background="#3cb4c3">
+
+
+                <ImageButton
+                    android:id="@+id/backarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="#3cb4c3"
+                    android:src="@drawable/backarrow" />
+
+                <TextView
+                    android:id="@+id/resturantname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/backarrow"
+                    android:text="Resturants"
+                    android:textColor="#dcf2f5"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/topbar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_bg"
+                android:backgroundTint="#54514F4F"
+                android:drawableLeft="@drawable/search_icon"
+                android:hint="  Search any resturant"
+                android:paddingStart="10dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/resturant1"
+                android:layout_width="360dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/search"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/resturant_banner"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/resturant2"
+                android:layout_width="360dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/resturant1"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/resturant_banner"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/resturant3"
+                android:layout_width="360dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/resturant2"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/resturant_banner"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/resturant4"
+                android:layout_width="360dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/resturant3"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/resturant_banner"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/blank_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottomnav"
+        android:background="#615D5D"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:background="#3cb4c3">
+
+        <ImageButton
+            android:id="@+id/homeicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/homeicon"
+            android:backgroundTint="#3cb4c3"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageButton
+            android:id="@+id/staricon"
+            android:layout_toRightOf="@+id/homeicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/staricon"
+            android:backgroundTint="#3cb4c3"
+            android:layout_marginLeft="50dp"/>
+
+        <ImageButton
+            android:id="@+id/carticon"
+            android:layout_toRightOf="@+id/staricon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/carticon"
+            android:backgroundTint="#3cb4c3"
+            android:layout_marginLeft="50dp"/>
+
+        <ImageButton
+            android:id="@+id/accounticon"
+            android:layout_toRightOf="@+id/carticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/accounticon"
+            android:backgroundTint="#3cb4c3"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

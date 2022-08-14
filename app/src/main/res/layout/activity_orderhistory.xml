@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".orderhistory"
+    android:background="#dcf2f5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/topbar"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:background="#3cb4c3">
+
+
+                <ImageButton
+                    android:id="@+id/backarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="#3cb4c3"
+                    android:src="@drawable/backarrow" />
+
+                <TextView
+                    android:id="@+id/resturantname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/backarrow"
+                    android:text="Order History"
+                    android:textColor="#dcf2f5"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/topbar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_bg"
+                android:backgroundTint="#54514F4F"
+                android:drawableLeft="@drawable/search_icon"
+                android:hint="  Search by resturant or dish"
+                android:paddingStart="10dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card1"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/search"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/resturant1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Resturant Name - 1"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/resturant1"
+                        android:layout_marginLeft="15dp"
+                        android:text="Resturant address"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <View
+                        android:id="@+id/line1"
+                        android:layout_width="370dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/address"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="#94818181" />
+
+                    <EditText
+                        android:id="@+id/delivered1"
+                        android:layout_width="83dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@+id/resturant1"
+                        android:background="@drawable/edittext_bg"
+                        android:text=" DELIVERED"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/dishname1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="1 - Dish name"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/dishname2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/dishname1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="3 - Dish name"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/dishname3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/dishname2"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="1 - Dish name"
+                        android:textSize="18dp" />
+
+                    <View
+                        android:id="@+id/line2"
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/dishname3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="#94818181" />
+
+                    <TextView
+                        android:id="@+id/date_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line2"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="7dp"
+                        android:text="10 Jan 2022 at 4:30 PM"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line2"
+                        android:layout_toRightOf="@+id/date_time"
+                        android:textSize="16dp"
+                        android:text="Rs. 350"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="80dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card2"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/card1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/resturant2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Resturant Name - 2"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/address2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/resturant2"
+                        android:layout_marginLeft="15dp"
+                        android:text="Resturant address"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <View
+                        android:id="@+id/line3"
+                        android:layout_width="370dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/address2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="#94818181" />
+
+                    <EditText
+                        android:id="@+id/delivered2"
+                        android:layout_width="83dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@+id/resturant2"
+                        android:background="@drawable/edittext_bg"
+                        android:text=" DELIVERED"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/dishname4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line3"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="1 - Dish name"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/dishname5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/dishname4"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="3 - Dish name"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/dishname6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/dishname5"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="1 - Dish name"
+                        android:textSize="18dp" />
+
+                    <View
+                        android:id="@+id/line4"
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/dishname6"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="#94818181" />
+
+                    <TextView
+                        android:id="@+id/date_time2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line4"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="7dp"
+                        android:text="10 Jan 2022 at 4:30 PM"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line4"
+                        android:layout_toRightOf="@+id/date_time2"
+                        android:textSize="16dp"
+                        android:text="Rs. 350"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="80dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card3"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/card2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/resturant3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Resturant Name - 3"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/address3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/resturant3"
+                        android:layout_marginLeft="15dp"
+                        android:text="Resturant address"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <View
+                        android:id="@+id/line5"
+                        android:layout_width="370dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/address3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="#94818181" />
+
+                    <EditText
+                        android:id="@+id/delivered3"
+                        android:layout_width="83dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@+id/resturant3"
+                        android:background="@drawable/edittext_bg"
+                        android:text=" DELIVERED"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/dishname7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line5"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="1 - Dish name"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/dishname8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/dishname7"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="3 - Dish name"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/dishname9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/dishname8"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="1 - Dish name"
+                        android:textSize="18dp" />
+
+                    <View
+                        android:id="@+id/line6"
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/dishname9"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="#94818181" />
+
+                    <TextView
+                        android:id="@+id/date_time3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line6"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="7dp"
+                        android:text="10 Jan 2022 at 4:30 PM"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line6"
+                        android:layout_toRightOf="@+id/date_time3"
+                        android:textSize="16dp"
+                        android:text="Rs. 350"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="80dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/blank_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottomnav"
+        android:background="#615D5D"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:background="#3cb4c3">
+
+        <ImageButton
+            android:id="@+id/homeicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/homeicon"
+            android:backgroundTint="#3cb4c3"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageButton
+            android:id="@+id/staricon"
+            android:layout_toRightOf="@+id/homeicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/staricon"
+            android:backgroundTint="#3cb4c3"
+            android:layout_marginLeft="50dp"/>
+
+        <ImageButton
+            android:id="@+id/carticon"
+            android:layout_toRightOf="@+id/staricon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/carticon"
+            android:backgroundTint="#3cb4c3"
+            android:layout_marginLeft="50dp"/>
+
+        <ImageButton
+            android:id="@+id/accounticon"
+            android:layout_toRightOf="@+id/carticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/accounticon"
+            android:backgroundTint="#3cb4c3"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

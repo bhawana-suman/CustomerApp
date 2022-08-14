@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cartpage"
+    android:background="#dcf2f5"
+    android:id="@+id/cartpage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/topbar"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:background="#3cb4c3">
+
+
+                <ImageButton
+                    android:id="@+id/backarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/backarrow"
+                    android:backgroundTint="#3cb4c3"/>
+
+                <TextView
+                    android:id="@+id/resturantname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Resturant name"
+                    android:textSize="20dp"
+                    android:layout_toRightOf="@+id/backarrow"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#dcf2f5"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/resturantname"
+                    android:backgroundTint="#dcf2f5"
+                    android:text="COUPONS"
+                    android:textColor="#3cb4c3" />
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topbar"
+                android:text="Your Orders"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"/>
+
+            <View
+                android:layout_width="260dp"
+                android:layout_height="2dp"
+                android:layout_below="@+id/topbar"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/order"
+                android:background="#3cb4c3" />
+
+            <TextView
+                android:id="@+id/dish1"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/order"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="1.  Dish Name - 1"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/rupee1"
+                android:layout_below="@+id/dish1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 150"
+                android:textSize="17dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="47dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/add1"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/order"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/dish1"
+                android:background="@drawable/foodsearchbar"
+                android:backgroundTint="#3cb4c3"
+                app:cardCornerRadius="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/addicon"
+                        android:backgroundTint="#3cb4c3"
+                        android:layout_marginTop="0dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="1"
+                        android:textSize="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="#dcf2f5"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/removeitem_icon"
+                        android:backgroundTint="#3cb4c3"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="7dp"/>
+
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/dish2"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/dish1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:text="2.  Dish Name - 2"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/rupee2"
+                android:layout_below="@+id/dish2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 150"
+                android:textSize="17dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="47dp"/>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/add2"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/add1"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@+id/dish1"
+                android:background="@drawable/foodsearchbar"
+                android:backgroundTint="#3cb4c3"
+                app:cardCornerRadius="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/addicon"
+                        android:backgroundTint="#3cb4c3"
+                        android:layout_marginTop="0dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="1"
+                        android:textSize="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="#dcf2f5"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/removeitem_icon"
+                        android:backgroundTint="#3cb4c3"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="7dp"/>
+
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/dish3"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/dish2"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:text="3.  Dish Name - 3"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/rupee3"
+                android:layout_below="@+id/dish3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 150"
+                android:textSize="17dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="47dp"/>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/add3"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/add2"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@+id/dish1"
+                android:background="@drawable/foodsearchbar"
+                android:backgroundTint="#3cb4c3"
+                app:cardCornerRadius="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/addicon"
+                        android:backgroundTint="#3cb4c3"
+                        android:layout_marginTop="0dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="1"
+                        android:textSize="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="#dcf2f5"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/removeitem_icon"
+                        android:backgroundTint="#3cb4c3"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="7dp"/>
+
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="370dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rupee3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="#94818181" />
+
+            <TextView
+                android:id="@+id/itemtotal"
+                android:layout_below="@+id/line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:text="Iteam Total"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/totalprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 200"
+                android:layout_below="@+id/line1"
+                android:layout_toRightOf="@+id/itemtotal"
+                android:textSize="16dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="18dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/promo"
+                android:layout_below="@+id/itemtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:text="PROMO - (TRYNEW)"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Rs. 50"
+                android:layout_below="@+id/totalprice"
+                android:layout_toRightOf="@+id/promo"
+                android:textSize="16dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="6dp"
+                android:textColor="#EF0A0A"/>
+
+            <TextView
+                android:id="@+id/taxes"
+                android:layout_below="@+id/promo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:text="Taxes + Charges"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/taxprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 70"
+                android:layout_below="@+id/discount"
+                android:layout_toRightOf="@+id/promo"
+                android:textSize="16dp"
+                android:layout_marginLeft="138dp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/delivery"
+                android:layout_below="@+id/taxes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:text="Delivery Charges"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/deliverycharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 50"
+                android:layout_below="@+id/taxprice"
+                android:layout_toRightOf="@+id/promo"
+                android:textSize="16dp"
+                android:layout_marginLeft="138dp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/black"/>
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="370dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/deliverycharge"
+                android:background="#94818181"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+            <RelativeLayout
+                android:layout_below="@+id/line2"
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:background="#6F514E4E"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/grandtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GRAND TOTAL"
+                    android:textSize="18dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 270"
+                    android:textSize="18dp"
+                    android:layout_toRightOf="@+id/grandtotal"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="145dp"
+                    android:textStyle="bold"/>
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/blank_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottomnav"
+        android:background="#615D5D"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:background="#3cb4c3">
+
+        <ImageButton
+            android:id="@+id/homeicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#3cb4c3"
+            android:src="@drawable/homeicon" />
+
+        <ImageButton
+            android:id="@+id/staricon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/homeicon"
+            android:backgroundTint="#3cb4c3"
+            android:src="@drawable/staricon" />
+
+        <ImageButton
+            android:id="@+id/carticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/staricon"
+            android:backgroundTint="#3cb4c3"
+            android:src="@drawable/carticon" />
+
+        <ImageButton
+            android:id="@+id/accounticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/carticon"
+            android:backgroundTint="#3cb4c3"
+            android:src="@drawable/accounticon" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

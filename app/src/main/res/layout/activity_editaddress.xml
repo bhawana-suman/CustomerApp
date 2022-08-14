@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editaddress"
+    android:background="#dcf2f5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/topbar"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:background="#3cb4c3">
+
+
+                <ImageButton
+                    android:id="@+id/backarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="#3cb4c3"
+                    android:src="@drawable/backarrow" />
+
+                <TextView
+                    android:id="@+id/resturantname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/backarrow"
+                    android:text="Set Delivery Location"
+                    android:textColor="#dcf2f5"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/location_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topbar"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="28dp"
+                android:src="@drawable/location_search"
+                app:tint="#3cb4c3" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topbar"
+                android:layout_toRightOf="@+id/location_logo"
+                android:textSize="20dp"
+                android:text="Current Location"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/location_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location"
+                android:layout_toRightOf="@+id/location_logo"
+                android:textSize="17dp"
+                android:text="Enable location services"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="20dp" />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/location_detail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="#94818181" />
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="17dp"
+                android:text="SAVED ADDRESS"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/save"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/homeicon"
+                app:tint="#3cb4c3" />
+
+            <TextView
+                android:id="@+id/hometxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/save"
+                android:layout_toRightOf="@+id/home"
+                android:textSize="18dp"
+                android:text="Home "
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/homeadress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hometxt"
+                android:layout_toRightOf="@+id/home"
+                android:textSize="17dp"
+                android:text="Flat No. 1, Street Name, City, State, Pin Code "
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="320dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/homeadress"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="15dp"
+                android:background="#94818181" />
+
+            <ImageView
+                android:id="@+id/work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/work_icon"
+                app:tint="#3cb4c3" />
+
+            <TextView
+                android:id="@+id/hometxt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@+id/home"
+                android:text="Work "
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/homeadress2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hometxt2"
+                android:layout_toRightOf="@+id/home"
+                android:textSize="17dp"
+                android:text="Flat No. 1, Street Name, City, State, Pin Code "
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <View
+                android:id="@+id/line3"
+                android:layout_width="320dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/homeadress2"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="70dp"
+                android:background="#94818181" />
+
+            <ImageView
+                android:id="@+id/other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/location"
+                app:tint="#3cb4c3" />
+
+            <TextView
+                android:id="@+id/hometxt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@+id/home"
+                android:text="Other "
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/homeadress3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hometxt3"
+                android:layout_toRightOf="@+id/home"
+                android:textSize="17dp"
+                android:text="Flat No. 1, Street Name, City, State, Pin Code "
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <View
+                android:id="@+id/line4"
+                android:layout_width="320dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/homeadress3"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="70dp"
+                android:background="#94818181" />
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/blank_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottomnav"
+        android:background="#615D5D"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:background="#3cb4c3">
+
+        <ImageButton
+            android:id="@+id/homeicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#3cb4c3"
+            android:src="@drawable/homeicon" />
+
+        <ImageButton
+            android:id="@+id/staricon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/homeicon"
+            android:backgroundTint="#3cb4c3"
+            android:src="@drawable/staricon" />
+
+        <ImageButton
+            android:id="@+id/carticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/staricon"
+            android:backgroundTint="#3cb4c3"
+            android:src="@drawable/carticon" />
+
+        <ImageButton
+            android:id="@+id/accounticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/carticon"
+            android:backgroundTint="#3cb4c3"
+            android:src="@drawable/accounticon" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
